@@ -1,0 +1,14 @@
+extend layout/base
+
+block title
+    title HOME
+
+block content
+    #wrapper
+        div
+            | {!! Form::open(['url'=>'homeCreate']) !!}
+            | {!! Form::label('truck_number', 'Entrada', array('class' => 'mylabel')) !!}
+            | {!! Form::input('text', 'truck_number', null, ['class' => 'incomefld', 'placeholder'=>'camion']) !!}
+            | {!! Form::submit('Aceptar', array('class' => 'btn')) !!}
+            | {!! Form::close() !!}
+                

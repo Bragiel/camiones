@@ -14,7 +14,7 @@ elixir(function(mix) {
     });
 
     mix.scripts([
-        "jquery.min.js",
+        "../../../bower_components/jquery/dist/jquery.min.js",
         "plugins/*.js",
         "functions.js"
     ], "public/js/min/functions.min.js", "resources/assets/js");

@@ -1,0 +1,17 @@
+extend layout/base
+
+block title
+    title Camiones
+
+block content
+    #wrapper
+        div
+            | {!! Form::open(['url'=>'homeCreate']) !!}
+            | {!! Form::label('truck_number', 'Número Camión', array('class' => 'mylabel')) !!}
+            | {!! Form::input('text', 'truck_number', null, ['class' => 'incomefld', 'placeholder'=>'camion']) !!}
+            | {!! Form::label('volume', 'Volumen', array('class' => 'mylabel')) !!}
+            | {!! Form::input('text', 'volume', null, ['class' => 'incomefld', 'placeholder'=>'volumen']) !!}
+            | {!! Form::label('plates', 'Placas', array('class' => 'mylabel')) !!}
+            | {!! Form::input('text', 'plates', null, ['class' => 'incomefld', 'placeholder'=>'placas']) !!}
+            | {!! Form::submit('Aceptar', array('class' => 'btn')) !!}
+            | {!! Form::close() !!}
